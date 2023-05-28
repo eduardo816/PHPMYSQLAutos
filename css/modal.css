@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.fondoModal{
+	z-index: 5;
+	background-color: rgba(0,0,0,0.4);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.modalMensajes{
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	width: 100%;
+	background: linear-gradient(135deg, rgba(219,126,109,1) 0%, rgba(201,88,69,1) 49%, rgba(183,56,55,1) 100%); 
+	animation:animacionArriba 0.6s;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.modalMensajes{
+	display: block;
+	width: 45%;
+	background: #fff;
+	overflow: hidden;
+}
+.textosNotificacion,.textoNotificacionError{
+	text-align: center;
+    background-color: #2ECC71;
+    color: #fff;
+    font-family: segoe ui light;
+    padding: 20px;
+}
+.descripcion{
+	padding: 30px 30px 0 30px;
+font-family: segoe ui light;
+}
+.btnAceptarNotificacion{
+	text-decoration: none;
+	   background-color: green;
+    background-color: #2ECC71;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 15px;
+    float: right;
+    font-family: segoe ui light;
+font-weight: bold;
+}
+
+@keyframes animacionArriba{
+	from{top: -100px;opacity:0} to{top: 0;opacity:1}
+}
